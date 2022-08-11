@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>index</title>
+    </head>
+    <body>
+        <h1>is Index !</h1>
+        <img src="/static/img/image.jpg">
+        <div style="background: red;">
+            ejs file test 222
+        </div>
+        <img src="/public/img/image.jpg">
+        <img src="/static/img/image.jpg">
+
+        <a href="/test">이동</a>
+
+        <% for(var i=0; i<5; i++) { %>
+            <div>안녕하세요_ejs활용 <%=i%>
+            변수사용시에는 는 기호를 쓴다</div>
+        <% } %>
+
+        <%- include("test1.ejs") %>
+        <%- <img src="/static/img/image.jpg"> %>
+
+        
+        
+        <!-- <% var person = [
+                {"name":"김소연","gender":"여자"},
+                {"name":"홍길동","gender":"남자"}
+            ] %>
+        <table border="1" >
+            <tr>
+                <td>
+                    이름
+                </td>
+                <td>
+                    성별
+                </td>
+            </tr>
+            <% for(var i=0; i<person.length; i++) { %>
+                <tr>
+                    <td>
+                        <%=person[i]["name"]%>
+                    </td>
+                    <td>
+                        <%=person[i]["gender"]%>
+                    </td>
+                </tr>
+            <% } %>
+        </table> -->
+
+        <table border="1" >
+            <tr>
+                <td>
+                    이름
+                </td>
+                <td>
+                    성별
+                </td>
+            </tr>
+            <% for(var i=0; i<per.length; i++) { %>
+                <tr>
+                    <td>
+                        <%=per[i]["name"]%>
+                    </td>
+                    <td>
+                        <%=per[i]["gender"]%>
+                    </td>
+                </tr>
+            <% } %>
+        </table>
+
+
+        <script>
+            
+        </script>
+    
+    </body>
+</html>
